@@ -16,13 +16,14 @@ public class Main {
         Notebook notebook = new Notebook(4, "Notebook Gaming", 1200.0, 2, "Dell", 16);
         Printer printer1 = new Printer(5, "Impresora tonner", 900.0, 3, "Ricoh", 20);
 
+        //add item
         serviceInput.addInput(chair);
         serviceInput.addInput(desk);
         serviceInput.addInput(printer);
         serviceInput.addInput(printer1);
         serviceInput.addInput(notebook);
 
-
+        //Show items
         serviceInput.showInputs();
 
         serviceInput.apllyDiscount(10.0);
