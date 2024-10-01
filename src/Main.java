@@ -28,6 +28,7 @@ public class Main {
         serviceInput.apllyDiscount(10.0);
 
         serviceInput.newPrice();
+        serviceInput.showInputs();
 
     }
 }

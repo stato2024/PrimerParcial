@@ -28,10 +28,14 @@ public class ServiceInput {
 
     public void apllyDiscount(double percentage) {
         for (Input input : inventary) {
-            if (input instanceof Offer) {
-                Offer inputWithDiscount = (Offer) input;
-                double priceWithDiscount = inputWithDiscount.apllyDiscount(percentage);
+            if (input instanceof Chair) {
+                double priceWithDiscount =  ((Chair) input).apllyDiscount(percentage);
                 System.out.println("Descuento aplicado a " + input.getName() + ": " + priceWithDiscount);
+            }
+            if (input instanceof Printer){
+                double priceWithDiscount =  ((Printer) input).apllyDiscount(percentage);
+                System.out.println("Descuento aplicado a " + input.getName() + ": " + priceWithDiscount);
+
             }
         }
     }
